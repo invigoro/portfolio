@@ -21,6 +21,15 @@ body {
 	width: 300px;
 	/*margin: 0px 40px 10px 10px;*/
 }
+.profile-small {
+	width: 150px;
+}
+a {
+	color: navy;
+}
+td {
+	padding: 15px;
+}
 /*@media only screen and (max-width: 768px) {
     #sidenav{
         display: none;
