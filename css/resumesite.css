@@ -8,14 +8,45 @@ h3 {
 body {
 	background-color: #737373;
 }
-.navbar-green > a, .navbar-green > ul > li > a {
-	color: lightgreen;
+.navbar-green {
+	padding: 12px 0px;
+}
+.navbar > #pdf {
+	margin-left: auto;
+	display: inline;
+}
+.navbar > #pdf > a {
+	font-weight: bold;
 }
 .navbar-green > a {
-	font-size: 1.3em;
+	font-size: 1.4em;
+	/*display: inline-block;*/
+	background-color: lightgreen;
+	padding: 3px 20px;
+	border-radius: 10px;
+	color: #404040;
+	font-weight: bold;
 }
-.navbar-green > ul > li > a {
-	font-size: 1em;
+.navbar-green > a:hover{
+	border: 3px lightgreen solid;
+	color: lightgreen;
+	background-color: #404040;
+	padding: 0px 17px;
+}
+.navbar-green > ul {
+}
+.navbar-green > ul > li > a, .navbar-green > #pdf > a{
+	font-size: 1.1em;
+	color: lightgreen;
+}
+.navbar-white > ul > .head {
+	margin-top: 20px;
+	color: lightgreen;
+	font-size: 1.1em;
+}
+.navbar-white > ul > li > a {
+	color: lightgray;
+	font-size: 0.9em;
 }
 .profile {
 	width: 300px;
@@ -38,9 +69,13 @@ td {
 #sidenav {
 	width: 232px;
 	flex-flow: column nowrap;
-	align-items: flex-start;
+	align-items: flex-end;
 	position: fixed;
 	height: 100%;
+	padding-right: 30px;
+}
+#sidenav > * {
+	text-align: right;
 }
 .odd {
 	background-color: darkgray;
