@@ -1,4 +1,6 @@
-
+html {
+	scroll-behavior: smooth;
+}
 h3 {
 	color: #404040;
 	font-size: 1.3em;
