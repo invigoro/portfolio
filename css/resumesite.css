@@ -24,6 +24,10 @@ body {
 .mylist {
 	list-style: none;
 }
+.listhead {
+	margin-left: 51px;
+}
+
 .mylist > li {
 	padding: 12px;
 }
