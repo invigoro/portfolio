@@ -68,7 +68,7 @@
 				<h4>Building It</h4>
 				<p>Initially, it was difficult for me to decide on which technologies and services to use in order to create this game. I considered Android Studio, Amazon Web Services, and Apache Server for various aspects of the program. Eventually, I decided on using React Native--even though the technology is fairly new--in order to have a simultaneous release to Android and iOS. Additionally, I went with Google Firebase as the back-end service for its easy of use, scalability, and integration with authentication techniques. Learning and becoming familiar with all of these new technologies over a couple of months was difficult, but well worth it in the end!</p>
 				<h4>More Info</h4>
-				</p>Want to see the source code? It's available <a href=''>here</a> on Github.</p><p>The complete app will be available soon for download on mobile devices. Check here for updates!</p>
+				<!--</p>Want to see the source code? It's available <a href=''>here</a> on Github.</p>--><p>The complete app will be available soon for download on mobile devices. Check here for updates!</p>
 			</div>
 			<div class='col-xl-6'>
 				
@@ -81,14 +81,23 @@
 				<p>This series of projects involved an in-depth look into a variety of image processing and manipulation techniques. Primarily using OpenCV, these techniques explored how computers can see the world through a digital camera and apply that informtion to common robotics problems such as decision making.</p>
 				<h4>Image Manipulation</h4>
 				<img src='../img/imgproc1.jpg' width='100%'/>
-				<p>Using a framework image manipulation program, I wrote Java methods to implement a variety of image manipulation algorithms. These methods involve mathematical operations including image rotations, translations, blurs, and masks. Additionaly, the methods covered color operations such as color correction, color detection, equalization, grayscaling, and histograms.</p>
+				<p>Using a framework image manipulation program, I wrote Java methods to implement a variety of image manipulation algorithms. These methods involve mathematical operations including image rotations, translations, blurs, masks, and edge detection. Additionaly, the methods covered color operations such as color correction, color detection, equalization, grayscaling, and histograms.</p>
 				<h4>OpenCV Programs</h4>
-				<p>OpenCV has some fantastic features! Using Python3, the first application we built was for color detection, using HSV tolerances to find pixel values within a threshold that could be modified at runtime. Then, we used parts of this program to create another one that took the average of the previous few frames. Using matrix operations, we calculated the differences between frames to detect and display motion as it occured in the frame.  </p>
-				<p></p>
-				<h4>Robotics</h4>
-				<p></p> 
+				<p>OpenCV has some fantastic features! Using Python3, the first application we built was for color detection, using HSV tolerances to find pixel values within a threshold that could be modified at runtime. Then, we used parts of this program to create another one that took the average of the previous few frames. Using matrix operations, we calculated the differences between frames to detect and display motion as it occurred in the frame. </p>
+				<p>Next, we worked on object detection with images. Using the Canny edge detection algorithm and OpenCV contour functions, we attempted to separate objects by color and shape. As a challenge, we used images and videos of Skittles and M&Ms, attempting to count the number of occurrences of each color. This turned out to be particularly difficult when the candy color was similar to the background or when two of the same color overlapped at all in the image, but served as a great exercise for determining tolerances when applying the same methods to robot vision.</p>
+				
 			</div>
 			<div class='col-xl-6'>
+					<h4>Robotics</h4>
+					<p>Using what we'd practiced with in OpenCV, we next moved on to putting some of these techniques to use in robotics. With some of the robots at MSU's robotics lab, we first started working on a similar problem that faces automated vehicles: following a simple line. </p> 
+					<h4>More Info</h4>
+					<p>Interested in the source code? These projects can be found here: </p>
+					<ul class='mylist'>
+						<li><a href='https://github.com/invigoro/ImageProcessing'>Image Processing 1</a></li>
+						<li><a href='https://github.com/invigoro/ImageProcessing2'>Image Processing 2</a></li>
+						<li><a href='https://github.com/invigoro/robot-chase'>Robot following a line</a></li>
+						<li><a href='https://github.com/Cory-Pete/RobotFace'>Robot find a human</a></li>
+					</ul>
 			</div>
 		</div>
 		<div class='row odd' id='cc'>

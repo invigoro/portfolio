@@ -23,13 +23,11 @@ body {
 }
 .mylist {
 	list-style: none;
-}
-.listhead {
-	margin-left: 51px;
+	padding: 0;
 }
 
 .mylist > li {
-	padding: 12px;
+	padding: 5px 0px 10px 0px;
 }
 .navbar-green > a {
 	font-size: 1.4em;
@@ -66,8 +64,11 @@ body {
 .profile-small {
 	width: 150px;
 }
-a {
+a  {
 	color: navy;
+}
+.odd > * > a{
+	color: #0000EE;
 }
 td {
 	padding: 15px;
