@@ -18,6 +18,15 @@ body {
 .navbar > #pdf > a {
 	font-weight: bold;
 }
+#programming-table > table > *{
+	font-weight: bold;
+}
+.mylist {
+	list-style: none;
+}
+.mylist > li {
+	padding: 12px;
+}
 .navbar-green > a {
 	font-size: 1.4em;
 	/*display: inline-block;*/
@@ -91,3 +100,4 @@ td {
 		margin-left: 0px;
 	}		
 }
+
