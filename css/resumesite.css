@@ -36,6 +36,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.row > * > img {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 
 
 .mylist > li {
