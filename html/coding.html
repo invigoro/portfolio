@@ -79,11 +79,11 @@
 				<h3>Programmer/Team Leader</h3>
 				<p>This series of projects involved an in-depth look into a variety of image processing and manipulation techniques. Primarily using OpenCV, these techniques explored how computers can see the world through a digital camera and apply that informtion to common robotics problems such as decision making.</p>
 				<h4>Image Manipulation</h4>
-				<img src='../img/imgproc1.jpg' width='100%'/>
+				<img src='../img/imgproc1.jpg' alt='color detection w/ tolerances' width='100%'/>
 				<p>Using a framework image manipulation program, I wrote Java methods to implement a variety of image manipulation algorithms. These methods involve mathematical operations including image rotations, translations, blurs, masks, and edge detection. Additionaly, the methods covered color operations such as color correction, color detection, equalization, grayscaling, and histograms.</p>
 				<h4>OpenCV Programs</h4>
 				<p>OpenCV has some fantastic features! Using Python3, the first application we built was for color detection, using HSV tolerances to find pixel values within a threshold that could be modified at runtime. Then, we used parts of this program to create another one that took the average of the previous few frames. Using matrix operations, we calculated the differences between frames to detect and display motion as it occurred in the frame. </p>
-				<img src='../img/imgproc2.jpg' width='100%' style='padding-top: 10px; padding-bottom: 20px;'/>
+				<img src='../img/imgproc2.jpg' alt='counting candy with openCV' width='100%' style='padding-top: 10px; padding-bottom: 20px;'/>
 				<p>Next, we worked on object detection with images. Using the Canny edge detection algorithm and OpenCV contour functions, we attempted to separate objects by color and shape. As a challenge, we used images and videos of Skittles and M&Ms, attempting to count the number of occurrences of each color. This turned out to be particularly difficult when the candy color was similar to the background or when two of the same color overlapped at all in the image, but served as a great exercise for determining tolerances when applying the same methods to robot vision.</p>
 				<img src='../img/imgproc3.jpg' width='100%'/>
 			</div>
@@ -105,18 +105,20 @@
 		</div>
 		<div class='row odd' id='cc'>
 			<div class='col-xl-6'>
+				<img src='../img/catcon1.jpg' width='55%' style='float: right; padding-left: 15px;'/>
 				<h2>Cat's Conundrum</h2>
 				<h3>Programmer/Project Leader</h3>
 				<p>Over the course of 4 months, I led a multidisciplinary team which also included two mechanical engineers and one electrical engineer. Our task: to build a working prototype of a remotely controlled vehicle from scratch.</p>
-				<img src='../img/catcon1.jpg' width='50%' style='float: right; padding-left: 15px;'/>
 				<h4>The Problem</h4>	
 				<p>The Cat's Conundrum is a challenging obstacle course with around twenty interchangeable tiles, with one obstacle on each tile. With a budget cap of $200, we had the difficult objective of prototyping a vehicle within the specified size limits that could navigate the course and earn as many points as possible in under ten minutes. Each obstacle was worth a base value of points, and some of them had point multipliers depending on the difficultly accomplished. </p>
 				<p>With the problem laid out before us, we began the process of research and ideation. With a variety of possible solutions for each functional objective, we moved on to the decision-making stage in order to start building the first version of the prototype.</p>			
+				<h4>Making it Happen</h4>
+				<p>After research and some test runs, it was clear that the most effective type of design would involve treads rather than wheels. We also decided on using Bluetooth for our means of controlling the vehicle remotely as it would allow for redunancy of controllers if the control application was deployed to multiple mobile devices. <img src='../img/catcon2.jpg' alt='sketch of app design' width='50%' style='float: left; padding: 15px 15px 5px 0px;'>The vehicle had four motors that would work in pairs, and the tread design allowed for skid-steering to make sharp turns on the course. </p>
+				<p>The code for the controller application was written in Java using Android Studio. The final design ended up being fairly simple in order to make it intuitive to steer the vehicle: two verticle sliders with a handful of additional buttons. Each slider would control one side of the vehicle (up for forward, down for back) and would snap back to the middle (setting the speed to 0) when not being touched. This allowed for incredibly easy control of the vehicle, particularly skid-steering. </p>
+				<p>Of course, the app couldn't do everything by itself. The vehicle was controlled via an Arduino Nano which I programmed using Arduino's C++ library. Essentially, every time a button was pushed or a slider was changed in the app, a character array was sent to the Arduino which received it through a Bluetooth module. Then, the Nano would decypher the command based on what the current settings of the vehicle were and what the character array contained. Simple, yet effective!</p>
+				<img src='../img/catcon3.jpg' alt='the second prototype' width='100%'>
 			</div>
 			<div class='col-xl-6'>
-				<h4>Making it Happen</h4>
-				<p>After research and some test runs, it was clear that the most effective type of design would involve treads rather than wheels. We also decided on using Bluetooth for our means of controlling the vehicle remotely as it would allow for redunancy of controllers if the control application was deployed to multiple mobile devices. The vehicle had four motors that would work in pairs, and the tread design allowed for skid-steering to make sharp turns on the course. </p>
-				<p>The code for the controller application was written in Java using Android Studio. The final design ended up being fairly simple in order to make it intuitive to steer the vehicle: two verticle sliders with a handful of additional buttons. Each slider would control one side of the vehicle (up for forward, down for back) and would snap back to the middle (setting the speed to 0) when not being touched. This allowed for incredibly easy control of the vehicle, particularly skid-steering. </p>
 				<h4>Results</h4>
 				<p></p>
 				<h4>More Info</h4>
