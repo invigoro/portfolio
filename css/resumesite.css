@@ -86,7 +86,17 @@ a  {
 .odd > * > a{
 	color: #0000EE;
 }
-td {
+
+table.standard-table td {
+	padding: 3px 15px;
+}
+table.standard-table tr {
+	border-top: 1px solid #1a1a1a;
+}
+table.standard-table {
+	width: 100%;
+}
+table.coding-table td {
 	padding: 15px;
 }
 @media only screen and (max-width: 768px) {
