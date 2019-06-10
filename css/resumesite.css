@@ -99,6 +99,9 @@ table.standard-table {
 table.coding-table td {
 	padding: 15px;
 }
+table.contact-table td {
+	padding: 10px 15px;
+}
 @media only screen and (max-width: 768px) {
     iframe{
         width: 100%;
