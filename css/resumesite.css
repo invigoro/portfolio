@@ -1,3 +1,8 @@
+:root {
+	--lightpurple: orchid;
+	--purple: purple;
+  }
+
 html {
 	scroll-behavior: smooth;
 }
@@ -6,7 +11,7 @@ h3 {
 	font-size: 1.3em;
 }
 body {
-	background-color: #737373;
+	background-color: #e9e7e7;
 }
 .navbar-green {
 	padding: 12px 0px;
@@ -119,7 +124,7 @@ table.contact-table td {
 	text-align: right;
 }
 .odd {
-	background-color: darkgray;
+	background-color: rgb(214, 214, 214);
 }
 #sidebarwcontent {
 	margin-left: 232px;
