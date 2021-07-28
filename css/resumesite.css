@@ -1,6 +1,6 @@
 :root {
-	--lightpurple: orchid;
-	--purple: purple;
+	--lightpurple: plum;
+	--purple: darkorchid;
   }
 
 html {
@@ -13,7 +13,7 @@ h3 {
 body {
 	background-color: #e9e7e7;
 }
-.navbar-green {
+.navbar-purple {
 	padding: 12px 0px;
 }
 .navbar > #pdf {
@@ -46,32 +46,34 @@ body {
 	padding-bottom: 15px;
 }
 
-
+h2 {
+	color: var(--purple);
+}
 .mylist > li {
 	padding: 5px 0px 10px 0px;
 }
-.navbar-green > a {
+.navbar-purple > a {
 	font-size: 1.4em;
 	/*display: inline-block;*/
-	background-color: lightgreen;
+	background-color: var(--lightpurple);
 	padding: 3px 20px;
 	border-radius: 10px;
 	color: #404040;
 	font-weight: bold;
 }
-.navbar-green > a:hover{
-	border: 3px lightgreen solid;
-	color: lightgreen;
+.navbar-purple > a:hover{
+	border: 3px var(--lightpurple) solid;
+	color: var(--lightpurple);
 	background-color: #404040;
 	padding: 0px 17px;
 }
-.navbar-green > ul > li > a, .navbar-green > #pdf > a{
+.navbar-purple > ul > li > a, .navbar-purple > #pdf > a{
 	font-size: 1.1em;
-	color: lightgreen;
+	color: var(--lightpurple);
 }
 .navbar-white > ul > .head {
 	margin-top: 20px;
-	color: lightgreen;
+	color: var(--lightpurple);
 	font-size: 1.1em;
 }
 .navbar-white > ul > li > a {
