@@ -20,4 +20,4 @@ const navbar = `<nav class="navbar navbar-expand-sm bg-dark navbar-purple justif
 		</nav>`;
 document.getElementById("navbar").innerHTML = navbar;
 document.getElementById("navbar").classList.add("sticky-top");
-scrollTo(0, 0);
+//scrollTo(0, 0);
