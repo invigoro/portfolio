@@ -28,10 +28,16 @@
 						<a class="nav-link" href="#graphics">Graphics Demo</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#framegenerator">Frame Generator</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#rpg-v3">RPG Store V3</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#rpg-v2">RPG Store V2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#filmpitchbot">Film Pitch Bot</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#juicepress">The Juice Press</a>
@@ -45,20 +51,11 @@
 					<li class="nav-item">					
 						<a class="nav-link" href="#cc">Cat's Conundrum</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#ai">AI Projects</a>
-					</li>
 				</ul>
 			</nav>
 		
-		<div class='container-fluid' id='sidebarwcontent'>
+		<div class='container-fluid alt-rows' id='sidebarwcontent'>
 			<div class='row' id='racinggame'>
-				<div class='col-xl-6 col-12'>
-					<video controls autoplay loop class="img-fluid">
-  						<source src="../vid/racing vid.mp4" type="video/mp4">
-  							Your browser does not support the video tag.
-						</video>
-				</div>
 				<div class='col-xl-6 col-12'>
 					<h2><a href='https://github.com/invigoro/cs512-FinalProject'>Kart Racing Game</a></h2>
 					<h3>Software Developer</h3>
@@ -70,8 +67,14 @@
 					
 					<p class="font-weight-bold"><a href="https://tinyurl.com/Finalcs512">Play Game</a></p>
 				</div>
+				<div class='col-xl-6 col-12'>
+					<video controls autoplay loop class="img-fluid">
+  						<source src="../vid/racing vid.mp4" type="video/mp4">
+  							Your browser does not support the video tag.
+						</video>
+				</div>
 			</div>
-			<div class='row odd' id='graphics'>
+			<div class='row' id='graphics'>
 				<div class='col-xl-6 col-12'>
 					<h2><a href='https://github.com/invigoro/cs512-hw5'>Graphics Demo</a></h2>
 					<h3>Programmer</h3>
@@ -88,15 +91,26 @@
   						<source src="../vid/graphics vid.mp4" type="video/mp4">
   							Your browser does not support the video tag.
 						</video>
-					
 				</div>
 			</div>
-			<div class='row' id='rpg-v3'>
+			<div class='row' id='framegenerator'>
 				<div class='col-xl-6 col-12'>
-					<a href='https://www.rpgmegamart.com'>
-						<img class="img-fluid" src="./../img/rpgmegamart3.png">
-					</a>
+					<h2><a href='https://github.com/invigoro/rpg-megamartv3'>Artificial Frame Generator</a></h2>
+					<h3>Software Developer</h3>
+					<p>Software for procedural generation of of interstitial frames in video.</p>
+					<h4>Details</h4>
+					<p>This project encompassed various techniques for generating frames artificially in video based on existing frames via interpolation. Techniques include Farneback optical flow, Canny edge detection, and motion blur to estimate interstitial frames. </p>
+					<p>Testing primarily involved removing frames from existing video, regenerating the frames with our software, then mathematically comparing the new frames to the originals.</p>
+					<p class="font-weight-bold"><a href="https://github.com/invigoro/ArtificialFrameGenerator">View Code</a></p>
 				</div>
+				<div class='col-xl-6 col-12'>
+					<video controls autoplay loop class="img-fluid">
+  						<source src="../vid/fp1.mp4" type="video/mp4">
+  							Your browser does not support the video tag.
+						</video>
+				</div>
+			</div>
+			<div class="row" id="rpg-v3">
 				<div class='col-xl-6 col-12'>
 					<h2><a href='https://github.com/invigoro/rpg-megamartv3'>RPG MegaMart v3</a></h2>
 					<h3>Software Developer</h3>
@@ -105,8 +119,13 @@
 					<p>This simpler, open source version allows anyone to fork the repository to set up their own store(s) from a template. As a static site, any store can be hosted as a public website for free on GitHub Pages.</p>
 					<p class="font-weight-bold"><a href="https://invigoro.github.io/rpg-megamartv3/template.html">View Example</a></p>
 				</div>
+				<div class='col-xl-6 col-12'>
+					<a href='https://invigoro.github.io/rpg-megamartv3/template.html'>
+						<img class="img-fluid" src="./../img/rpgmegamart3.png">
+					</a>
+				</div>
 			</div>
-			<div class='row odd' id='rpg-v2'>
+			<div class='row' id='rpg-v2'>
 				<div class='col-xl-6 col-12'>
 					<h2><a href='https://www.rpgmegamart.com'>RPG MegaMart v2</a></h2>
 					<h3>Software Developer</h3>
@@ -124,14 +143,22 @@
 					</a>
 				</div>
 			</div>
-			<div class='row' id='juicepress'>
+			<div class='row' id='filmpitchbot'>
 				<div class='col-xl-6 col-12'>
-				<a href='https://thejuice.press'>
-					<img class="img-fluid" src="./../img/thejuicepress1.png">
-				</a>
-				<!-- <h4>Building It</h4>
-				<p>This is the second iteration of this store--the first one was prototyped simply running from a laptop on my local network  and built in PHP. For the second version, I opted for a more refined tech stack using .NET Core and an MVC design pattern with a PostgreSQL database.</p> -->
+					<h2><a href='https://x.com/FilmPitchBotV2'>Film Pitch Bot</a></h2>
+					<h3>Software Developer</h3>
+					<p>A Twitter bot that uses data from <a href='https://www.themoviedb.org/'>TMBd's free API</a> to randomly generate a movie title, description, and cast members.</p>
+					<h4>Details</h4>
+					<p>This bot uses randomly selected movies from TMBd's database, does some text prediction based on this small data sample, then creates a movie title, description, and a small cast list. The movie title and description are then reworded with OpenAI, and a movie poster is generated via Craiyon/DALL·E. Sometimes these image requests are rejected due to offensive language in the generated movie description. These movies are then posted to Twitter.</p>
+					<p class="font-weight-bold"><a href="https://x.com/FilmPitchBotV2">Visit Twitter</a> | <a href='https://github.com/invigoro/FilmPitchBotV2'>View Code</a></p>
 				</div>
+				<div class='col-xl-6 col-12'>
+					<a href='https://x.com/FilmPitchBotV2'>
+						<img class="img-fluid" src="./../img/fpb.png">
+					</a>
+				</div>
+			</div>
+			<div class='row' id='juicepress'>
 				<div class='col-xl-6 col-12'>
 					<h2><a href='https://thejuice.press'>The Juice Press</a></h2>
 					<h3>Software Developer</h3>
@@ -140,9 +167,16 @@
 					<p>The Juice Press offers a place for content writes to create and edit satirical articles and quizzes--yes, it has a custom quiz builder. </p>
 					<p class="font-weight-bold"><a href="https://thejuice.press">Visit Site</a>
 				</div>
+				<div class='col-xl-6 col-12'>
+				<a href='https://thejuice.press'>
+					<img class="img-fluid" src="./../img/thejuicepress1.png">
+				</a>
+				<!-- <h4>Building It</h4>
+				<p>This is the second iteration of this store--the first one was prototyped simply running from a laptop on my local network  and built in PHP. For the second version, I opted for a more refined tech stack using .NET Core and an MVC design pattern with a PostgreSQL database.</p> -->
+				</div>
 				
 			</div>
-		<div class='row odd' id='cluest'>
+		<div class='row alt-ignore' id='cluest'>
 			<div class='col-xl-6'>
 				<h2>Cluest - Mobile Game</h2>
 				<h3>Lead Software Engineer/Project Manager/Game Designer</h3>
@@ -157,7 +191,7 @@
 				</p>Want to see the source code? It's available <a href='https://github.com/invigoro/Cluest-Prototype' class="font-weight-bold">here</a> on Github.</p><!--<p>The complete app will be available soon for download on mobile devices. Check here for updates!</p> -->
 			</div>
 		</div>
-		<div class='row' id='opencv'>
+		<div class='row alt-ignore' id='opencv'>
 			<div class='col-xl-6'>
 				<h2>OpenCV - Robot Vision</h2>
 				<h3>Programmer/Team Leader</h3>
@@ -187,7 +221,7 @@
 					</ul>
 			</div>
 		</div>
-		<div class='row odd' id='cc'>
+		<div class='row alt-ignore' id='cc'>
 			<div class='col-xl-6'>
 				<img src='../img/catcon1.jpg' width='55%' style='float: right; padding-left: 15px;'/>
 				<h2>Cat's Conundrum</h2>

@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>	
-		<title>Timothy Wells - Video Game Projects</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../css/resumesite.css">
-		<link rel="icon" href="../img/icon.png">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	</head>
-	<body>
+
+<head>
+	<title>Timothy Wells - Video Game Projects</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/resumesite.css">
+	<link rel="icon" href="../img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
 
 
-<div id="navbar"></div>
-		</nav>
-			<nav class="navbar bg-dark navbar-white fixed-left" id='sidenav'>
-				<ul class="navbar-nav">
-					<li class='nav-item head'>Coding Projects</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#racinggame">Racing Game</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#cluest">Cluest Mobile Game</a>
-					</li>
-				</ul>
-			</nav>
-		
-		<div class='container-fluid' id='sidebarwcontent'>
-			<div class='row' id='rpg'>
-				<div class='col-xl-6 col-12'>
-					<video controls autoplay loop class="img-fluid">
-  						<source src="../vid/racing vid.mp4" type="video/mp4">
-  							Your browser does not support the video tag.
-						</video>
-					
-				</div>
-				<div class='col-xl-6 col-12'>
-					<h2><a href='https://github.com/invigoro/cs512-FinalProject'>Kart Racing Game</a></h2>
-					<h3>Software Developer</h3>
-					<p>This kart-racing game allows you to traverse a procedurally generated environment in order to collect orbs to try for a high score.</p>
-					<h4>Details</h4>
-					<p>Written in WebGL Javscript, this game can be played entirely in the browser. It did not make use of any existing game engine---instead, everything is code from the ground up.</p>
-					<p>This kart game demonstrates implementations of a number of computer graphics fundamentals, such as defining primitives, hierarchical modeling, the Blinn-Phong lighting model, texture mapping, and bump mapping. Additionally, several types of physics simulation are present, including collision detection, kart movement, and particle generation.</p>
-					<p>The levels are procedurally generated, with a randomization factor for the environment (trees, obstacles, orbs, road segments, clouds). At each completed level, the difficulty increases by adding in more orbs to collect and more obstacles to avoid.</p>
-					
-					<p class="font-weight-bold"><a href="https://tinyurl.com/Finalcs512">Play Game</a></p>
-				</div>
+	<div id="navbar"></div>
+	</nav>
+	<nav class="navbar bg-dark navbar-white fixed-left" id='sidenav'>
+		<ul class="navbar-nav">
+			<li class='nav-item head'>Coding Projects</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#racinggame">Racing Game</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#cluest">Cluest Mobile Game</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class='container-fluid alt-rows' id='sidebarwcontent'>
+		<div class='row' id='racinggame'>
+			<div class='col-xl-6 col-12'>
+				<h2><a href='https://github.com/invigoro/cs512-FinalProject'>Kart Racing Game</a></h2>
+				<h3>Software Developer</h3>
+				<p>This kart-racing game allows you to traverse a procedurally generated environment in order to collect
+					orbs to try for a high score.</p>
+				<h4>Details</h4>
+				<p>Written in WebGL Javscript, this game can be played entirely in the browser. It did not make use of
+					any existing game engine---instead, everything is code from the ground up.</p>
+				<p>This kart game demonstrates implementations of a number of computer graphics fundamentals, such as
+					defining primitives, hierarchical modeling, the Blinn-Phong lighting model, texture mapping, and
+					bump mapping. Additionally, several types of physics simulation are present, including collision
+					detection, kart movement, and particle generation.</p>
+				<p>The levels are procedurally generated, with a randomization factor for the environment (trees,
+					obstacles, orbs, road segments, clouds). At each completed level, the difficulty increases by adding
+					in more orbs to collect and more obstacles to avoid.</p>
+
+				<p class="font-weight-bold"><a href="https://tinyurl.com/Finalcs512">Play Game</a></p>
 			</div>
-		<div class='row odd' id='cluest'>
+			<div class='col-xl-6 col-12'>
+				<video controls autoplay loop class="img-fluid">
+					<source src="../vid/racing vid.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+		<div class='row alt-ignore' id='cluest'>
 			<div class='col-xl-6'>
 				<h2>Cluest - Mobile Game</h2>
 				<h3>Lead Software Engineer/Project Manager/Game Designer</h3>
-				<p>Cluest is a mobile gaming application built using React Native for simultaneous release to Android and iOS devices.</p>
+				<p>Cluest is a mobile gaming application built using React Native for simultaneous release to Android
+					and iOS devices.</p>
 				<h4>How It Works</h4>
-				<p>As a mobile treasure hunting game, Cluest utilizes the device's built-in location service in order to send users on treasure hunts. When a user joins, Cluest automatically finds friends using Facebook's API. From there, a player can walk around anywhere and save their current location. This becomes a <i>clue</i> with some type of hint to help anyone find the location. Once a user has enough clues, they can string them together into a sequence called a <i>treasure hunt</i> and send it to their friends! Once a person has received a hunt from another user, they can enter <i>treasure hunt mode</i> to play the the hunt, where each clue found will point them towards the next one for a complete treasure hunt.</p>
+				<p>As a mobile treasure hunting game, Cluest utilizes the device's built-in location service in order to
+					send users on treasure hunts. When a user joins, Cluest automatically finds friends using Facebook's
+					API. From there, a player can walk around anywhere and save their current location. This becomes a
+					<i>clue</i> with some type of hint to help anyone find the location. Once a user has enough clues,
+					they can string them together into a sequence called a <i>treasure hunt</i> and send it to their
+					friends! Once a person has received a hunt from another user, they can enter <i>treasure hunt
+						mode</i> to play the the hunt, where each clue found will point them towards the next one for a
+					complete treasure hunt.</p>
 			</div>
 			<div class='col-xl-6'>
 				<h4>Building It</h4>
-				<p>Initially, it was difficult for me to decide on which technologies and services to use in order to create this game. I considered Android Studio, Amazon Web Services, and Apache Server for various aspects of the program. Eventually, I decided on using React Native--even though the technology is fairly new--in order to have a simultaneous release to Android and iOS. Additionally, I went with Google Firebase as the back-end service for its easy of use, scalability, and integration with authentication techniques. Learning and becoming familiar with all of these new technologies over a couple of months was difficult, but well worth it in the end!</p>
+				<p>Initially, it was difficult for me to decide on which technologies and services to use in order to
+					create this game. I considered Android Studio, Amazon Web Services, and Apache Server for various
+					aspects of the program. Eventually, I decided on using React Native--even though the technology is
+					fairly new--in order to have a simultaneous release to Android and iOS. Additionally, I went with
+					Google Firebase as the back-end service for its easy of use, scalability, and integration with
+					authentication techniques. Learning and becoming familiar with all of these new technologies over a
+					couple of months was difficult, but well worth it in the end!</p>
 				<h4>More Info</h4>
-				</p>Want to see the source code? It's available <a href='https://github.com/invigoro/Cluest-Prototype' class="font-weight-bold">here</a> on Github.</p><!--<p>The complete app will be available soon for download on mobile devices. Check here for updates!</p> -->
+				</p>Want to see the source code? It's available <a href='https://github.com/invigoro/Cluest-Prototype'
+					class="font-weight-bold">here</a> on Github.</p>
+				<!--<p>The complete app will be available soon for download on mobile devices. Check here for updates!</p> -->
 			</div>
 		</div>
-		</div>
-		
-		
-		<script src="../script/header.js"></script>
-	</body>
+	</div>
+
+
+	<script src="../script/header.js"></script>
+</body>
+
 </html>
