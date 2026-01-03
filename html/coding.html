@@ -22,6 +22,9 @@
 				<ul class="navbar-nav">
 					<li class='nav-item head'>Coding Projects</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#newworld">Novateria</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#racinggame">Racing Game</a>
 					</li>
 					<li class="nav-item">
@@ -55,10 +58,28 @@
 			</nav>
 		
 		<div class='container-fluid alt-rows' id='sidebarwcontent'>
+			<div class='row' id='newworld'>
+				<div class='col-xl-6 col-12'>
+					<h2>Novateria: The New World</h2>
+					<h3>Game Designer/Developer</h3>
+					<p>A fantasy-setting, colonial period, turn-based RPG. Currently a work-in-progress.</p>
+					<h4>Details</h4>
+					<p>Novateria is a turn-based RPG in the style of DOS and Baldur's Gate, and it's by far the largest game project I've undertaken so far. The game follows a party of adventurers in a fantasy New World setting similar to colonial North America, as they travel across dangerous lands in search of a lost colony.</p>
+					<p>The player will have the ability to control up to four characters at once, and the game will include a turn-based combat system with a wide variety of different items and abilities.</p>
+					<p>This project is primarily being developed in Unity. If you're interested in being involved in this project, I'm looking for volunteers to help with all aspects---art, coding, and game design. <a class="font-weight-bold" href='./contact.html'>Contact me!</a></p>
+					
+					<!-- <p class="font-weight-bold"><a href="https://tinyurl.com/Finalcs512">Play Game</a></p> -->
+				</div>
+				<div class='col-xl-6 col-12'>
+					<!-- <a href='https://invigoro.github.io/rpg-megamartv3/template.html'> -->
+						<img class="img-fluid" src="./../img/nw2.png">
+					<!-- </a> -->
+				</div>
+			</div>
 			<div class='row' id='racinggame'>
 				<div class='col-xl-6 col-12'>
 					<h2><a href='https://github.com/invigoro/cs512-FinalProject'>Kart Racing Game</a></h2>
-					<h3>Software Developer</h3>
+					<h3>Game Designer/Software Developer</h3>
 					<p>This kart-racing game allows you to traverse a procedurally generated environment in order to collect orbs to try for a high score.</p>
 					<h4>Details</h4>
 					<p>Written in WebGL Javscript, this game can be played entirely in the browser. It did not make use of any existing game engine---instead, everything is code from the ground up.</p>
@@ -176,19 +197,43 @@
 				</div>
 				
 			</div>
-		<div class='row alt-ignore' id='cluest'>
+		
+		<div class='row' id='cluest'>
 			<div class='col-xl-6'>
-				<h2>Cluest - Mobile Game</h2>
+				<h2><a href='https://github.com/invigoro/Cluest-Prototype'>Cluest - Mobile Game</a></h2>
 				<h3>Lead Software Engineer/Project Manager/Game Designer</h3>
-				<p>Cluest is a mobile gaming application built using React Native for simultaneous release to Android and iOS devices.</p>
+				<p>Cluest is a mobile gaming application built using React Native for simultaneous release to Android
+					and iOS devices.</p>
 				<h4>How It Works</h4>
-				<p>As a mobile treasure hunting game, Cluest utilizes the device's built-in location service in order to send users on treasure hunts. When a user joins, Cluest automatically finds friends using Facebook's API. From there, a player can walk around anywhere and save their current location. This becomes a <i>clue</i> with some type of hint to help anyone find the location. Once a user has enough clues, they can string them together into a sequence called a <i>treasure hunt</i> and send it to their friends! Once a person has received a hunt from another user, they can enter <i>treasure hunt mode</i> to play the the hunt, where each clue found will point them towards the next one for a complete treasure hunt.</p>
-			</div>
-			<div class='col-xl-6'>
+				<p>As a mobile treasure hunting game, Cluest utilizes the device's built-in location service in order to
+					send users on treasure hunts. When a user joins, Cluest automatically finds friends using Facebook's
+					API. From there, a player can walk around anywhere and save their current location. This becomes a
+					<i>clue</i> with some type of hint to help anyone find the location. Once a user has enough clues,
+					they can string them together into a sequence called a <i>treasure hunt</i> and send it to their
+					friends! Once a person has received a hunt from another user, they can enter <i>treasure hunt
+						mode</i> to play the the hunt, where each clue found will point them towards the next one for a
+					complete treasure hunt.</p>
+					
 				<h4>Building It</h4>
-				<p>Initially, it was difficult for me to decide on which technologies and services to use in order to create this game. I considered Android Studio, Amazon Web Services, and Apache Server for various aspects of the program. Eventually, I decided on using React Native--even though the technology is fairly new--in order to have a simultaneous release to Android and iOS. Additionally, I went with Google Firebase as the back-end service for its easy of use, scalability, and integration with authentication techniques. Learning and becoming familiar with all of these new technologies over a couple of months was difficult, but well worth it in the end!</p>
+				<p>Initially, it was difficult for me to decide on which technologies and services to use in order to
+					create this game. I considered Android Studio, Amazon Web Services, and Apache Server for various
+					aspects of the program. Eventually, I decided on using React Native--even though the technology is
+					fairly new--in order to have a simultaneous release to Android and iOS. Additionally, I went with
+					Google Firebase as the back-end service for its easy of use, scalability, and integration with
+					authentication techniques. Learning and becoming familiar with all of these new technologies over a
+					couple of months was difficult, but well worth it in the end!</p>
 				<h4>More Info</h4>
-				</p>Want to see the source code? It's available <a href='https://github.com/invigoro/Cluest-Prototype' class="font-weight-bold">here</a> on Github.</p><!--<p>The complete app will be available soon for download on mobile devices. Check here for updates!</p> -->
+				</p>Want to see the source code? It's available <a href='https://github.com/invigoro/Cluest-Prototype'
+					class="font-weight-bold">here</a> on Github.</p>
+				<!--<p>The complete app will be available soon for download on mobile devices. Check here for updates!</p> -->
+			</div>
+			<div class='col-xl-6 col-12'>
+				<h4>Demo</h4>
+				<!-- <iframe src="https://drive.google.com/file/d/1Z2gkR9dgkoaXrWXgpU3UU-lffdDCLoXi/view?usp=sharing" width="640" height="480"></iframe> -->
+				<video controls class="img-fluid">
+					<source src="../vid/cluest.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
 			</div>
 		</div>
 		<div class='row alt-ignore' id='opencv'>
@@ -203,9 +248,10 @@
 				<p>OpenCV has some fantastic features! Using Python3, the first application we built was for color detection, using HSV tolerances to find pixel values within a threshold that could be modified at runtime. Then, we used parts of this program to create another one that took the average of the previous few frames. Using matrix operations, we calculated the differences between frames to detect and display motion as it occurred in the frame. </p>
 				<img src='../img/imgproc2.jpg' alt='counting candy with openCV' width='100%' style='padding-top: 10px; padding-bottom: 20px;'/>
 				<p>Next, we worked on object detection with images. Using the Canny edge detection algorithm and OpenCV contour functions, we attempted to separate objects by color and shape. As a challenge, we used images and videos of Skittles and M&Ms, attempting to count the number of occurrences of each color. This turned out to be particularly difficult when the candy color was similar to the background or when two of the same color overlapped at all in the image, but served as a great exercise for determining tolerances when applying the same methods to robot vision.</p>
-				<img src='../img/imgproc3.jpg' width='100%'/>
+
 			</div>
-			<div class='col-xl-6'>
+			<div class='col-xl-6'>				
+				<img src='../img/imgproc3.jpg' width='100%'/>
 					<h4>Robotics</h4>
 					<p>Using what we'd practiced with in OpenCV, we next moved on to putting some of these techniques to use in robotics. With some of the robots at MSU's robotics lab, we first started working on a similar problem that faces automated vehicles: following a simple line. </p> 
 					<p>Using a combination of blurring, edge detection, and thresholding, were were pretty quick to get the robot to follow a solid line in one direction. From there, we moved on to a more difficult challenge of a dotted line that occasionally became solid for sections. This was more difficult, but with adding a method for calculating the center of mass of filtered objects in the current frame, we were able to acheive it. When the robot reaches the end of the line, it does a 180&#176; sweep to look for any more signs of a trail before determining that it's finished the path.</p>
