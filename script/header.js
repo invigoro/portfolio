@@ -10,9 +10,9 @@ const navbar = `<nav class="navbar navbar-expand-sm bg-dark navbar-purple justif
 				<li class="nav-item">
 					<a class="nav-link" href="/html/films.html">Films</a>
 				</li>
-				<li class='nav-item'>
+				<!--<li class='nav-item'>
 					<a class='nav-link' href="/files/Wells_CV.pdf" download>Download Résumé</a>
-				</li>
+				</li>-->
 				<li class="nav-item">
 					<a class="nav-link" href="/html/contact.html">Contact</a>
 				</li>
