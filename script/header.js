@@ -5,7 +5,7 @@ const navbar = `<nav class="navbar navbar-expand-sm bg-dark navbar-purple justif
 					<a class="nav-link" href="/html/coding.html">Coding Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/html/other.html">Video Games</a>
+					<a class="nav-link" href="/html/games.html">Video Games</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/html/films.html">Films</a>
