@@ -149,3 +149,6 @@ table.contact-table td {
 	flex-direction: row-reverse;
 }
 
+footer {
+	margin-top: 5em;
+}
