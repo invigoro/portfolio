@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Timothy Wells</title>
+  <meta name="description" content="Software projects by Timothy Wells — real-time graphics, games, computer vision, robotics, and web applications.">
+  <link rel="canonical" href="https://invigoro.me/projects.html">
+  <meta property="og:title" content="Projects · Timothy Wells">
+  <meta property="og:description" content="Software projects by Timothy Wells — real-time graphics, games, computer vision, robotics, and web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://invigoro.me/projects.html">
+  <meta name="theme-color" content="#2a2a2e">
+  <link rel="icon" href="/assets/img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>
+    // Set before first paint so a dark-mode visitor never sees a white flash.
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
+</head>
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="nav__brand" href="/">Timothy Wells</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="/projects.html" aria-current="page">Projects</a></li>
+        <li><a href="/film.html">Film</a></li>
+        <li><a href="/resume.html">Résumé</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" title="Switch between light and dark">
+        <span class="visually-hidden">Toggle dark mode</span>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+<header class="page-header">
+      <div class="wrap">
+        <p class="eyebrow">Projects</p>
+        <h1>Things I have built</h1>
+        <p class="lede">Graphics and game engines written from scratch, computer vision on real hardware, and web apps people actually use. Video games live here too — filter for them below.</p>
+        
+      </div>
+    </header>
+
+    <div class="filter-bar">
+      <div class="wrap">
+        <div class="filters" data-filters>
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">Everything</button>
+          <button type="button" class="chip" data-filter="games" aria-pressed="false">Video games</button>
+          <button type="button" class="chip" data-filter="graphics" aria-pressed="false">Graphics</button>
+          <button type="button" class="chip" data-filter="web" aria-pressed="false">Web &amp; Apps</button>
+          <button type="button" class="chip" data-filter="vision" aria-pressed="false">Vision &amp; Robotics</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripes">
+      <article class="stripe" id="newworld" data-tags="games">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Novateria: The New World</h2>
+          <p class="stripe__meta">Game designer &amp; developer</p>
+          
+          <p class="lede">A party-based, turn-based RPG set in a fantasy version of the colonial New World — and the largest game project I have taken on.</p>
+          <p>Novateria follows a company of adventurers across dangerous, half-mapped territory in search of a lost colony. It takes its cues from <i>Divinity: Original Sin</i> and <i>Baldur's Gate</i>: you control up to four characters at once, and combat is turn-based with a deep pool of items and abilities.</p>
+          <p>The project is in active development in Unity. I am looking for volunteers on every front — art, code, and design — so <a href="/contact.html">get in touch</a> if you would like to be part of it.</p>
+          <ul class="stack"><li>Unity</li><li>C#</li></ul>
+          <p class="actions"><a class="btn" href="https://novateria.invigoro.me">Project site</a></p>
+        </div>
+        <div class="stripe__media">
+        <video class="media__video" width="1280" height="720" poster="/assets/video/novateria.webp" preload="none" controls playsinline muted loop data-autoplay aria-label="Exploring a village in Novateria">
+          <source src="/assets/video/novateria.mp4" type="video/mp4">
+          <p>Your browser cannot play this video. <a href="/assets/video/novateria.mp4">Download it instead.</a></p>
+        </video>
+        </div>
+      </article>
+      <article class="stripe is-alt" id="racinggame" data-tags="games graphics">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Kart Racing Game</h2>
+          <p class="stripe__meta">Game designer &amp; developer</p>
+          
+          <p class="lede">A browser kart racer through a procedurally generated world, written in raw WebGL with no game engine underneath it.</p>
+          <p>Everything runs in the browser and everything is built from the ground up: primitives, hierarchical modeling, Blinn-Phong lighting, texture and bump mapping, plus collision detection, kart physics, and particle effects.</p>
+          <p>Each level is generated with randomized terrain, trees, obstacles, orbs, road segments, and clouds. Clear a level and the next one raises the difficulty by scattering more orbs to collect and more obstacles to dodge.</p>
+          <ul class="stack"><li>WebGL</li><li>JavaScript</li></ul>
+          <p class="actions"><a class="btn" href="https://tinyurl.com/Finalcs512">Play it</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/cs512-FinalProject">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <video class="media__video" width="1280" height="720" poster="/assets/video/racing-game.webp" preload="none" controls playsinline aria-label="Driving a kart through a procedurally generated level">
+          <source src="/assets/video/racing-game.mp4" type="video/mp4">
+          <p>Your browser cannot play this video. <a href="/assets/video/racing-game.mp4">Download it instead.</a></p>
+        </video>
+        </div>
+      </article>
+      <article class="stripe" id="graphics" data-tags="graphics">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Interactive Graphics Demo</h2>
+          <p class="stripe__meta">Programmer</p>
+          
+          <p class="lede">A hands-on WebGL scene for poking at computer graphics fundamentals — every part of it is adjustable from the page.</p>
+          <p>The scene supports a range of primitives that can be added, scaled, rotated, and translated freely. Objects can be parented to one another, so changing a rotation speed moves an entire hierarchy at once.</p>
+          <p>It also implements the Blinn-Phong lighting model with two light sources, while the stars behind the scene read as a third. Objects carry textures, bump maps, and in some cases animated textures, all swappable at runtime.</p>
+          <ul class="stack"><li>WebGL</li><li>JavaScript</li></ul>
+          <p class="actions"><a class="btn" href="https://invigoro.github.io/cs512-hw5/index.html">Try the demo</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/cs512-hw5">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <video class="media__video" width="900" height="600" poster="/assets/video/graphics-demo.webp" preload="none" controls playsinline aria-label="Textured, lit primitives orbiting in the graphics demo">
+          <source src="/assets/video/graphics-demo.mp4" type="video/mp4">
+          <p>Your browser cannot play this video. <a href="/assets/video/graphics-demo.mp4">Download it instead.</a></p>
+        </video>
+        </div>
+      </article>
+      <article class="stripe is-alt" id="ray-tracing" data-tags="graphics">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Ray Tracing Demo</h2>
+          <p class="stripe__meta">Programmer</p>
+          
+          <p class="lede">A compact ray tracer in WebGL, covering materials, reflection, and refraction.</p>
+          <p>An interactive page that walks through the basic principles of ray tracing: how rays meet surfaces, how different materials respond, and what reflection and refraction do to the image.</p>
+          <ul class="stack"><li>WebGL</li></ul>
+          <p class="actions"><a class="btn" href="https://invigoro.github.io/cs512-hw6/index.html">Try the demo</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/cs512-hw6">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <a href="https://invigoro.github.io/cs512-hw6/index.html" class="media__link"><img src="/assets/img/raytracing.webp" width="1034" height="638" alt="Reflective and refractive spheres rendered by the ray tracer" class="media__img" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="stripe" id="framegenerator" data-tags="vision graphics">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Artificial Frame Generator</h2>
+          <p class="stripe__meta">Software developer</p>
+          
+          <p class="lede">Software that invents the frames between frames, interpolating new video from the footage around it.</p>
+          <p>The generator estimates interstitial frames from neighboring ones using Farneback optical flow, Canny edge detection, and motion blur.</p>
+          <p>Testing it was pleasantly self-checking: pull frames out of an existing clip, regenerate them, then compare the reconstruction against the originals mathematically.</p>
+          <ul class="stack"><li>OpenCV</li><li>Optical flow</li></ul>
+          <p class="actions"><a class="btn" href="https://github.com/invigoro/ArtificialFrameGenerator">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <video class="media__video" width="1280" height="720" poster="/assets/video/frame-generator.webp" preload="none" controls playsinline muted loop data-autoplay aria-label="Interpolated frames generated from source video">
+          <source src="/assets/video/frame-generator.mp4" type="video/mp4">
+          <p>Your browser cannot play this video. <a href="/assets/video/frame-generator.mp4">Download it instead.</a></p>
+        </video>
+        </div>
+      </article>
+      <article class="stripe is-alt" id="rpg-v3" data-tags="web">
+        <div class="stripe__text">
+          <h2 class="stripe__title">RPG MegaMart v3</h2>
+          <p class="stripe__meta">Software developer</p>
+          
+          <p class="lede">An open-source rewrite of RPG MegaMart as a static site anyone can fork and run for free.</p>
+          <p>V3 strips the shop down to HTML and JavaScript. Fork the repository, fill in your items from the template, and you have a storefront for your table — hosted on GitHub Pages at no cost, with no account or backend to maintain.</p>
+          <ul class="stack"><li>HTML</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+          <p class="actions"><a class="btn" href="https://invigoro.github.io/rpg-megamartv3/template.html">See an example</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/rpg-megamartv3">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <a href="https://invigoro.github.io/rpg-megamartv3/template.html" class="media__link"><img src="/assets/img/rpgmegamart3.webp" width="1400" height="689" alt="RPG MegaMart v3 storefront template" class="media__img" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="stripe" id="rpg-v2" data-tags="web">
+        <div class="stripe__text">
+          <h2 class="stripe__title">RPG MegaMart v2</h2>
+          <p class="stripe__meta">Software developer</p>
+          
+          <p class="lede">A live web app where tabletop players design magic items, publish them, and sell them to each other in shared stores.</p>
+          <p>Anyone can build items for their game — Dungeons &amp; Dragons, Monster of the Week, Uncharted Worlds — customize them fully, and make them public for other groups to browse. Gather the items you want into a store, add your players, and let them shop.</p>
+          <p>The first version of this was a PHP prototype running off a laptop on my local network. V2 rebuilt it properly on .NET Core with an MVC structure and a PostgreSQL database.</p>
+          <ul class="stack"><li>.NET Core</li><li>PostgreSQL</li><li>MVC</li></ul>
+          <p class="actions"><a class="btn" href="https://www.rpgmegamart.com">Visit the site</a></p>
+        </div>
+        <div class="stripe__media">
+        <a href="https://www.rpgmegamart.com" class="media__link"><img src="/assets/img/rpgmegamart2.webp" width="1037" height="771" alt="The RPG MegaMart item catalog" class="media__img" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="stripe is-alt" id="filmpitchbot" data-tags="web">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Film Pitch Bot</h2>
+          <p class="stripe__meta">Software developer</p>
+          
+          <p class="lede">A bot that pitches movies that do not exist, complete with a cast list and a poster.</p>
+          <p>The bot samples real films from <a href="https://www.themoviedb.org/">TMDb's free API</a>, runs text prediction over that small sample to assemble a title, logline, and short cast list, then rewrites the result with OpenAI and generates a poster through Craiyon or DALL·E. Occasionally the poster request gets rejected for whatever the description managed to say. The survivors get posted.</p>
+          <ul class="stack"><li>TMDb API</li><li>OpenAI</li><li>DALL·E</li></ul>
+          <p class="actions"><a class="btn" href="https://x.com/FilmPitchBotV2">Read the pitches</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/FilmPitchBotV2">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <a href="https://x.com/FilmPitchBotV2" class="media__link"><img src="/assets/img/fpb.webp" width="579" height="560" alt="A generated film pitch with poster art" class="media__img" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="stripe" id="juicepress" data-tags="web">
+        <div class="stripe__text">
+          <h2 class="stripe__title">The Juice Press</h2>
+          <p class="stripe__meta">Software developer</p>
+          
+          <p class="lede">A satire publication with a stable of writers and, yes, a custom quiz builder.</p>
+          <p>The Juice Press gives contributors a place to draft, edit, and publish satirical articles and quizzes, with the quiz format built from scratch rather than bolted on.</p>
+          
+          <p class="actions"><a class="btn" href="https://thejuicepress.invigoro.me">Visit the site</a></p>
+        </div>
+        <div class="stripe__media">
+        <a href="https://thejuicepress.invigoro.me" class="media__link"><img src="/assets/img/thejuicepress1.webp" width="989" height="800" alt="The Juice Press home page" class="media__img" loading="lazy" decoding="async"></a>
+        </div>
+      </article>
+      <article class="stripe is-alt" id="cluest" data-tags="games web">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Cluest</h2>
+          <p class="stripe__meta">Lead engineer, project manager &amp; game designer</p>
+          
+          <p class="lede">A mobile treasure hunting game that turns the places around you into clues for your friends to chase.</p>
+          <p>Cluest uses the phone's location services to build hunts out of real places. Save a spot, attach a hint, and it becomes a <i>clue</i>; string enough clues together and you have a <i>treasure hunt</i> to send to a friend. They enter hunt mode, and each clue they find points toward the next. New players are matched with friends automatically through Facebook.</p>
+          <p>Choosing the stack took longer than I expected — Android Studio, AWS, and Apache were all on the table. React Native won because it meant a single simultaneous release on Android and iOS, and Firebase handled the backend, scaling, and authentication. Learning all of it at once over a couple of months was a slog, and worth it.</p>
+          <ul class="stack"><li>React Native</li><li>Firebase</li><li>Facebook API</li></ul>
+          <p class="actions"><a class="btn" href="https://github.com/invigoro/Cluest-Prototype">Source</a></p>
+        </div>
+        <div class="stripe__media">
+        <video class="media__video" width="852" height="480" poster="/assets/video/cluest.webp" preload="none" controls playsinline aria-label="Walkthrough of the Cluest mobile app">
+          <source src="/assets/video/cluest.mp4" type="video/mp4">
+          <p>Your browser cannot play this video. <a href="/assets/video/cluest.mp4">Download it instead.</a></p>
+        </video>
+        </div>
+      </article>
+      <article class="stripe" id="opencv" data-tags="vision">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Robot Vision with OpenCV</h2>
+          <p class="stripe__meta">Programmer &amp; team lead</p>
+          
+          <p class="lede">A run of projects on teaching a robot to see: image manipulation from scratch, then object detection, then robots acting on what they find.</p>
+          <p>The groundwork was writing the algorithms by hand in Java — rotations, translations, blurs, masks, edge detection, along with color correction, detection, equalization, grayscaling, and histograms.</p>
+          <p>From there we moved to OpenCV in Python. First color detection with runtime-adjustable HSV tolerances, then differencing a rolling average of recent frames to pick out motion as it happened. Then object detection with Canny edges and contours, which we tested by counting Skittles and M&amp;Ms by color — genuinely hard when a candy matches the background or overlaps another of the same color, and a useful lesson in how much tolerance tuning real vision takes.</p>
+          <p>The last stretch put it on hardware in MSU's robotics lab. Blur, edges, and thresholding got a robot following a solid line quickly; a dotted line took adding center-of-mass tracking of the filtered objects in frame, and a 180° sweep at the end of the trail to confirm it had actually finished. Next it searched for a human face, adjusted its distance until it was comfortable conversational range, greeted the person, and tracked their face — restarting the hunt if they left frame for more than fifteen seconds. The final program combined everything: navigate an obstacle course by distinguishing obstacles from safe path, find a person, take an item from them, and retrace the route.</p>
+          <ul class="stack"><li>Python</li><li>OpenCV</li><li>Java</li></ul>
+          <p class="actions"><a class="btn" href="https://github.com/invigoro/ImageProcessing">Image processing I</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/ImageProcessing2">Image processing II</a>
+            <a class="btn btn--ghost" href="https://github.com/invigoro/robot-chase">Line following</a>
+            <a class="btn btn--ghost" href="https://github.com/Cory-Pete/RobotFace">Face finding</a></p>
+        </div>
+        <div class="stripe__media">
+        <div class="media__grid" data-count="3">
+          <img src="/assets/img/imgproc1.webp" width="1400" height="570" alt="Color detection with adjustable tolerances" class="media__img" loading="lazy" decoding="async">
+          <img src="/assets/img/imgproc2.webp" width="1400" height="771" alt="Counting candy by color with contour detection" class="media__img" loading="lazy" decoding="async">
+          <img src="/assets/img/imgproc3.webp" width="1400" height="711" alt="The lab robot running a vision program" class="media__img" loading="lazy" decoding="async">
+        </div>
+        </div>
+      </article>
+      <article class="stripe is-alt" id="cc" data-tags="vision">
+        <div class="stripe__text">
+          <h2 class="stripe__title">Cat's Conundrum</h2>
+          <p class="stripe__meta">Programmer &amp; project lead</p>
+          
+          <p class="lede">Four months, two mechanical engineers, one electrical engineer, a $200 cap, and a remote-controlled vehicle built from nothing to run an obstacle course.</p>
+          <p>The Cat's Conundrum course is about twenty interchangeable tiles with an obstacle on each, scored on a base value plus multipliers for how hard a line you take through them. Our job was a vehicle inside strict size limits that could take as many points as possible in ten minutes.</p>
+          <p>Testing pushed us to treads over wheels, and to Bluetooth for control so the app could run on several phones as a hedge against failure. Four motors working in pairs let the treads skid-steer through tight turns.</p>
+          <p>I wrote the controller app in Java with Android Studio and kept it deliberately plain: two vertical sliders, one per side of the vehicle, snapping back to zero when released, plus a handful of buttons. On the other end an Arduino Nano ran my C++, decoding the character arrays the app pushed over a Bluetooth module against the vehicle's current state.</p>
+          <p>It paid off on the day. The run went better than any of our tests — light, nimble, and rugged enough for the terrain, with batteries that never sagged enough to cost us torque. The precision of those two sliders turned out to be the real edge: fine speed adjustments none of the competing vehicles could make, on exactly the obstacles that were worth the most.</p>
+          <ul class="stack"><li>Java</li><li>Android</li><li>Arduino C++</li></ul>
+          <p class="actions"><a class="btn" href="https://github.com/invigoro/Arduino_Controller">App &amp; Arduino source</a></p>
+        </div>
+        <div class="stripe__media">
+        <div class="media__grid" data-count="3">
+          <img src="/assets/img/catcon3.webp" width="1069" height="602" alt="The second prototype of the vehicle" class="media__img" loading="lazy" decoding="async">
+          <img src="/assets/img/catcon1.webp" width="1400" height="1050" alt="The vehicle running the obstacle course" class="media__img" loading="lazy" decoding="async">
+          <img src="/assets/img/catcon2.webp" width="737" height="570" alt="Early sketch of the controller app layout" class="media__img" loading="lazy" decoding="async">
+        </div>
+        <div class="media__embed" style="--ratio: 16 / 9">
+          <iframe src="https://www.youtube.com/embed/hX2RI3wGOeU" title="Cat's Conundrum course run" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="empty-state is-hidden" data-empty>Nothing in that category yet.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__name">Timothy Wells</p>
+      <ul class="footer__links">
+        <li><a href="https://github.com/invigoro">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/timothy-m-wells/">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/user/MrBobertsays/featured">YouTube</a></li>
+      </ul>
+      <p class="footer__legal">
+        &copy; <span data-year>2026</span> Timothy Wells &middot;
+        <a href="/terms.html">Terms of Use</a> &middot; <a href="/privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

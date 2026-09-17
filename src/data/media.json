@@ -1,0 +1,154 @@
+{
+  "img/alps1.webp": {
+    "w": 1400,
+    "h": 1050
+  },
+  "img/catcon1.webp": {
+    "w": 1400,
+    "h": 1050
+  },
+  "img/catcon2.webp": {
+    "w": 737,
+    "h": 570
+  },
+  "img/catcon3.webp": {
+    "w": 1069,
+    "h": 602
+  },
+  "img/fpb.webp": {
+    "w": 579,
+    "h": 560
+  },
+  "img/glacier1.webp": {
+    "w": 1000,
+    "h": 750
+  },
+  "img/glacier2.webp": {
+    "w": 1400,
+    "h": 1050
+  },
+  "img/icon.png": {
+    "w": 180,
+    "h": 135
+  },
+  "img/icon.webp": {
+    "w": 180,
+    "h": 135
+  },
+  "img/imgproc1.webp": {
+    "w": 1400,
+    "h": 570
+  },
+  "img/imgproc2.webp": {
+    "w": 1400,
+    "h": 771
+  },
+  "img/imgproc3.webp": {
+    "w": 1400,
+    "h": 711
+  },
+  "img/lucid1.webp": {
+    "w": 1400,
+    "h": 598
+  },
+  "img/lucid2.webp": {
+    "w": 1400,
+    "h": 935
+  },
+  "img/lucid3.webp": {
+    "w": 720,
+    "h": 960
+  },
+  "img/nw1.webp": {
+    "w": 936,
+    "h": 526
+  },
+  "img/nw2.webp": {
+    "w": 937,
+    "h": 524
+  },
+  "img/olympuswinnertransparent.webp": {
+    "w": 1400,
+    "h": 1053
+  },
+  "img/pbs1.webp": {
+    "w": 1400,
+    "h": 1050
+  },
+  "img/pbs2.webp": {
+    "w": 1400,
+    "h": 1050
+  },
+  "img/pisa1.webp": {
+    "w": 1400,
+    "h": 1867
+  },
+  "img/profilepic.webp": {
+    "w": 720,
+    "h": 720
+  },
+  "img/profilepic2.webp": {
+    "w": 720,
+    "h": 720
+  },
+  "img/raytracing.webp": {
+    "w": 1034,
+    "h": 638
+  },
+  "img/rpgmegamart2.webp": {
+    "w": 1037,
+    "h": 771
+  },
+  "img/rpgmegamart3.webp": {
+    "w": 1400,
+    "h": 689
+  },
+  "img/screen2.webp": {
+    "w": 534,
+    "h": 320
+  },
+  "img/spartan1.webp": {
+    "w": 639,
+    "h": 960
+  },
+  "img/thejuicepress1.webp": {
+    "w": 989,
+    "h": 800
+  },
+  "img/wedding1.webp": {
+    "w": 1400,
+    "h": 933
+  },
+  "img/xmas1.webp": {
+    "w": 1400,
+    "h": 933
+  },
+  "img/youchewb.webp": {
+    "w": 1144,
+    "h": 713
+  },
+  "video/cluest.webp": {
+    "w": 852,
+    "h": 480
+  },
+  "video/frame-generator.webp": {
+    "w": 1280,
+    "h": 720
+  },
+  "video/graphics-demo.webp": {
+    "w": 900,
+    "h": 600
+  },
+  "video/novateria-combat.webp": {
+    "w": 1280,
+    "h": 720
+  },
+  "video/novateria.webp": {
+    "w": 1280,
+    "h": 720
+  },
+  "video/racing-game.webp": {
+    "w": 1280,
+    "h": 720
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "invigoro.me — personal portfolio, built to static HTML for GitHub Pages",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch",
+    "media": "node tools/optimize-media.mjs"
+  }
+}

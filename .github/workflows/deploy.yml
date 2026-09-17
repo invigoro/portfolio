@@ -1,0 +1,62 @@
+name: Build and deploy
+
+# Rebuilds the site from src/ and publishes it to GitHub Pages on every push to
+# master. Requires Settings -> Pages -> Source set to "GitHub Actions"; until
+# that is switched over, Pages keeps serving the HTML committed in this repo and
+# the deploy step below will fail.
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; a queued one supersedes the one waiting.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build
+        run: node build.mjs
+
+      - name: Note whether the committed HTML was up to date
+        run: |
+          if git diff --quiet -- '*.html'; then
+            echo "Committed HTML matched the build." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### The committed HTML was stale" >> "$GITHUB_STEP_SUMMARY"
+            echo "Deploying the freshly built output. Run \`node build.mjs\` and commit before pushing to keep the repo honest." >> "$GITHUB_STEP_SUMMARY"
+            git diff --stat -- '*.html' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      # Uploads the repo root, which is the site. The action leaves out .git and
+      # .github on its own.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
