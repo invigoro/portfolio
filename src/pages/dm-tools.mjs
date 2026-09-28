@@ -35,7 +35,7 @@ export default () => ({
   body: `<header class="masthead">
       <div class="wrap">
         <h1>DM Tools</h1>
-        <p class="masthead__sub">Things I built to run my own games, parked somewhere I can find them again. Take what is useful.</p>
+        <p class="masthead__sub">Things I built to run my own games, collected in one place for reference. Take what is useful.</p>
         <p class="rule"><span>&#10022;</span></p>
       </div>
     </header>
