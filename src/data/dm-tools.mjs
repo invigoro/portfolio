@@ -47,6 +47,24 @@ export const shelves = [
     ],
   },
   {
+    id: 'four-horsemen',
+    title: 'Four Horsemen',
+    note: 'Four Horsemen is my worldbuilding game, in the vein of <i>The Quiet Year</i>: the table writes the history of a world one age at a time.',
+    tools: [
+      {
+        name: 'Age Deck',
+        tag: 'Four Horsemen',
+        href: 'https://fourhorsemen.invigoro.me/',
+        shot: 'dm-fourhorsemen',
+        alt: 'The Age Deck showing a drawn Age of Calamity: Pestilence card beside the history of earlier ages',
+        body: [
+          'Draws the deck the game runs on. Each card is the next age to befall the world, the calamities shuffle themselves in as you play so nobody knows which turn one arrives on, and every age drawn so far stays listed beside the deck.',
+          'The full deck list is there too, behind a spoiler warning, for whoever is running the table.',
+        ],
+      },
+    ],
+  },
+  {
     id: 'new-world',
     title: 'New World',
     note: 'New World is my homebrew game — a colonial-era fantasy setting with its own rules, so these only make sense at that table.',
