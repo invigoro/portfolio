@@ -14,6 +14,13 @@ export const site = {
     { href: 'contact.html', label: 'Contact' },
   ],
 
+  // Rendered as a line in the footer, above the copyright.
+  footerNote: {
+    before: 'Running a tabletop game?',
+    href: '/dm-tools.html',
+    label: 'My DM tools live here',
+  },
+
   social: [
     { label: 'GitHub', href: 'https://github.com/invigoro', handle: 'invigoro' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/timothy-m-wells/', handle: 'timothy-m-wells' },

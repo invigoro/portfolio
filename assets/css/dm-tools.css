@@ -1,0 +1,254 @@
+/* ==========================================================================
+   DM Tools — a deliberately separate look from the rest of invigoro.me:
+   parchment, ink, and a little gold leaf. Nothing here is shared with
+   site.css, so this page can drift without dragging the portfolio along.
+   ========================================================================== */
+
+:root {
+  --parchment: #ece0c8;
+  --parchment-deep: #ddcdac;
+  --card: #f6eeda;
+  --ink: #2e2419;
+  --ink-soft: #5b4a36;
+  --ink-faint: #897357;
+  --rule: #c3ae87;
+
+  --gold: #a5813c;
+  --oxblood: #6d2b25;
+  --forest: #33472f;
+
+  --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --display: 'Cinzel', 'EB Garamond', Georgia, serif;
+
+  --wrap: 68rem;
+  --gutter: 1.25rem;
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 1rem + 0.25vw, 1.2rem);
+  line-height: 1.6;
+  /* Parchment: a warm base, uneven lighting from the corners, and a faint
+     speckle so large areas do not read as flat colour. */
+  background-color: var(--parchment);
+  background-image:
+    radial-gradient(60rem 40rem at 12% -5%, rgb(255 250 235 / 0.75), transparent 60%),
+    radial-gradient(50rem 35rem at 95% 8%, rgb(214 190 150 / 0.55), transparent 60%),
+    radial-gradient(70rem 50rem at 50% 110%, rgb(176 150 110 / 0.45), transparent 65%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
+  background-attachment: fixed, fixed, fixed, scroll;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 1.6rem + 3.4vw, 4rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+h2 { font-size: clamp(1.4rem, 1.2rem + 1vw, 1.9rem); letter-spacing: 0.04em; }
+h3 { font-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem); letter-spacing: 0.03em; }
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--oxblood); text-underline-offset: 0.16em; }
+a:hover { color: var(--forest); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+:focus-visible {
+  outline: 3px solid var(--oxblood);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: var(--parchment);
+  border-radius: 0 0 6px 6px;
+  font-family: var(--display);
+  transition: top 0.15s ease;
+}
+.skip-link:focus { top: 0; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* -------------------------------------------------------------- header ---- */
+
+.masthead {
+  text-align: center;
+  padding-block: clamp(3rem, 8vw, 5.5rem) clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.masthead h1 { margin-bottom: 0.15em; }
+
+.masthead__sub {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+/* A gold rule with a diamond in the middle. */
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1.6rem auto 0;
+  max-width: 22rem;
+  color: var(--gold);
+}
+.rule::before,
+.rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+.rule span { font-size: 0.9rem; letter-spacing: 0.3em; }
+
+/* --------------------------------------------------------------- shelf ---- */
+
+.shelf { padding-block: clamp(1.5rem, 4vw, 2.75rem); }
+
+.shelf__head { margin-bottom: 1.75rem; }
+.shelf__head h2 { margin-bottom: 0.2em; color: var(--ink); }
+.shelf__note {
+  color: var(--ink-soft);
+  font-style: italic;
+  max-width: 42rem;
+}
+
+.tools {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  /* auto-fill, not auto-fit: a shelf with one tool keeps a card-sized card. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 23rem), 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tools li { margin: 0; }
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgb(46 36 25 / 0.12), 0 14px 28px -20px rgb(46 36 25 / 0.75);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+.tool:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 1px rgb(46 36 25 / 0.12), 0 20px 34px -18px rgb(46 36 25 / 0.75);
+}
+
+.tool__shot {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  object-fit: cover;
+  object-position: var(--focus, top left);
+  border-bottom: 1px solid var(--rule);
+  background: var(--parchment-deep);
+}
+
+.tool__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.35rem 1.4rem 1.5rem;
+}
+
+.tool__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5em;
+}
+.tool__title h3 { margin: 0; }
+
+.tool__tag {
+  font-family: var(--display);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 0.2rem 0.45rem;
+  white-space: nowrap;
+}
+
+.tool__body p { color: var(--ink-soft); }
+.tool__body p:last-of-type { margin-bottom: 1.25rem; }
+
+.tool__link {
+  margin-top: auto;
+  align-self: flex-start;
+  font-family: var(--display);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--parchment);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 0.55rem 1.2rem;
+  border-radius: 2px;
+}
+.tool__link:hover {
+  background: var(--oxblood);
+  border-color: var(--oxblood);
+  color: var(--parchment);
+}
+.tool__link .arrow { padding-left: 0.4em; }
+
+/* -------------------------------------------------------------- footer ---- */
+
+.footer {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-block: 2.5rem 3rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--rule);
+  background: rgb(221 205 172 / 0.35);
+}
+.footer__rule { color: var(--gold); font-size: 1.1rem; margin-bottom: 0.8em; }
+.footer__small { color: var(--ink-faint); font-size: 0.85rem; margin-top: 0.4em; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

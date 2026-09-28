@@ -718,6 +718,10 @@ a.card:hover {
 }
 .footer__links li { margin: 0; }
 .footer a { color: var(--plum); }
+.footer__aside {
+  margin-bottom: 0.7em;
+  color: #cfc9d6;
+}
 .footer__legal { color: #9c95a6; font-size: 0.87rem; margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {

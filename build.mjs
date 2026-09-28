@@ -1,7 +1,8 @@
 /**
  * Static site builder. No dependencies, no framework: every page in src/pages
- * is a module that returns HTML, which gets dropped into src/layouts/base.html
- * and written to the repo root so GitHub Pages can serve it directly.
+ * is a module that returns HTML, which gets dropped into a layout from
+ * src/layouts (base.html unless the page names another one) and written to the
+ * repo root so GitHub Pages can serve it directly.
  *
  *   node build.mjs
  *   node build.mjs --watch   rebuild whenever src/ changes
@@ -27,11 +28,14 @@ const REDIRECTS = {
 
 const escape = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-async function buildPage(layout, site, file) {
+async function buildPage(layouts, site, file) {
   const slug = file.replace(/\.mjs$/, '');
   const mod = await import(`${pathToFileURL(join(SRC, 'pages', file)).href}?v=${Date.now()}`);
   const page = typeof mod.default === 'function' ? await mod.default(site) : mod.default;
   const out = slug === 'home' ? 'index.html' : `${slug}.html`;
+
+  const layout = layouts[page.layout ?? 'base'];
+  if (!layout) throw new Error(`${file}: no layout named ${page.layout}`);
 
   const html = layout.replace(/\{\{\s*(\w+)\s*\}\}/g, (_, key) => {
     switch (key) {
@@ -71,6 +75,7 @@ const footer = (site) => `
       <ul class="footer__links">
 ${site.social.map((s) => `        <li><a href="${s.href}">${s.label}</a></li>`).join('\n')}
       </ul>
+      ${site.footerNote ? `<p class="footer__aside">${site.footerNote.before} <a href="${site.footerNote.href}">${site.footerNote.label}</a>.</p>` : ''}
       <p class="footer__legal">
         &copy; <span data-year>${new Date().getFullYear()}</span> ${site.name} &middot;
         <a href="/terms.html">Terms of Use</a> &middot; <a href="/privacy.html">Privacy Policy</a>
@@ -93,11 +98,16 @@ const redirectPage = (to) => `<!DOCTYPE html>
 
 async function build() {
   const started = Date.now();
-  const layout = await readFile(join(SRC, 'layouts', 'base.html'), 'utf8');
+  const layoutFiles = (await readdir(join(SRC, 'layouts'))).filter((f) => f.endsWith('.html'));
+  const layouts = Object.fromEntries(
+    await Promise.all(
+      layoutFiles.map(async (f) => [f.replace(/\.html$/, ''), await readFile(join(SRC, 'layouts', f), 'utf8')]),
+    ),
+  );
   const { site } = await import(`${pathToFileURL(join(SRC, 'data', 'site.mjs')).href}?v=${Date.now()}`);
   const files = (await readdir(join(SRC, 'pages'))).filter((f) => f.endsWith('.mjs'));
 
-  const written = await Promise.all(files.map((f) => buildPage(layout, site, f)));
+  const written = await Promise.all(files.map((f) => buildPage(layouts, site, f)));
 
   await mkdir(join(root, 'html'), { recursive: true });
   for (const [from, to] of Object.entries(REDIRECTS)) {

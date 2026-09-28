@@ -40,6 +40,7 @@ export const projects = [
     role: 'Designer & developer',
     tags: ['web', 'graphics'],
     stack: ['TypeScript', 'WebGL', 'GLSL', 'Vite'],
+    featured: true,
     summary:
       'A handout generator for tabletop games. Type your text, pick a material, and get back a weathered inscription or an aged document — chipped marble, scorched paper, faded runes.',
     body: [
@@ -56,6 +57,7 @@ export const projects = [
     links: [
       { href: 'https://stele.invigoro.me', label: 'Try it', primary: true },
       { href: 'https://github.com/invigoro/Stele', label: 'Source' },
+      { href: '/dm-tools.html', label: 'DM Tools shelf' },
     ],
   },
   {
