@@ -23,6 +23,10 @@
     "w": 1200,
     "h": 750
   },
+  "img/dm-jabberwock.webp": {
+    "w": 1200,
+    "h": 750
+  },
   "img/dm-megamart.webp": {
     "w": 1200,
     "h": 750
@@ -62,6 +66,14 @@
   "img/imgproc3.webp": {
     "w": 1400,
     "h": 711
+  },
+  "img/jabberwock-sayit.webp": {
+    "w": 1552,
+    "h": 908
+  },
+  "img/jabberwock.webp": {
+    "w": 2800,
+    "h": 1750
   },
   "img/lucid1.webp": {
     "w": 1400,

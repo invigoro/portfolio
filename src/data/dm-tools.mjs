@@ -25,6 +25,17 @@ export const shelves = [
         ],
       },
       {
+        name: 'Jabberwock',
+        tag: 'Filler text',
+        href: 'https://jabberwock.invigoro.me',
+        shot: 'dm-jabberwock',
+        alt: 'The Jabberwock generator with a passage of invented Elvish',
+        body: [
+          'Lorem ipsum for the table. Text in real languages and fantasy ones — Elvish out of French, Dwarvish out of Old Norse — where the words are invented but the rhythm, punctuation, and little words are real, so it reads as that language and means nothing.',
+          'Prose, conversation, inscriptions, or names; a respelling under each word for reading aloud; and a button that drops the finished text straight into Stele.',
+        ],
+      },
+      {
         name: 'RPG MegaMart',
         tag: 'Magic items',
         href: 'https://www.rpgmegamart.com',

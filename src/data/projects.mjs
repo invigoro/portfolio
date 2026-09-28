@@ -61,6 +61,31 @@ export const projects = [
     ],
   },
   {
+    id: 'jabberwock',
+    title: 'Jabberwock',
+    role: 'Designer & developer',
+    tags: ['web'],
+    stack: ['TypeScript', 'React', 'Vite'],
+    summary:
+      'Lorem ipsum for tabletop games: filler text in real and invented languages that looks and sounds like the genuine article and means absolutely nothing.',
+    body: [
+      'Pick a language — English, French, Latin, Welsh, Finnish, Old Norse, Old English, Enochian — or a fantasy one: Elvish built out of French, Dwarvish out of Old Norse, Orc out of its own sounds. Apart from real English and French, every word is invented, but the text keeps the rhythm, the punctuation, and the little everyday words of the language behind it, so it reads as that language to anyone, including someone who actually speaks it. Middle English and Shakespearean English keep <i>whan</i>, <i>quod</i>, <i>thou</i> and <i>hath</i> real and invent everything else, which is the trick <i>Jabberwocky</i> pulls.',
+      'Ask for prose, a conversation between two to four speakers, an inscription, or a page of names. Any of it can carry a respelling under each word for reading aloud at the table — <i>lay-RAHN</i> — or IPA, and every language comes with a note on how to voice it. The browser will read it out loud if you would rather it did. Everything comes from a seed, so the same settings give the same passage and a share link recreates it exactly, and each language keeps its vocabulary from one session to the next.',
+      'You can rename the languages for your own setting, or build a new one from scratch — its sounds, how they form syllables, where the stress lands, how it is spelled, whose rhythm it borrows — with sample words updating as you turn the dials. Settings and languages save to a file or travel in a link. Finished text opens straight into <a href="#stele">Stele</a> to become a weathered handout, and every source text it draws its flow from is public domain.',
+    ],
+    media: {
+      images: [
+        { image: 'jabberwock', alt: 'The Jabberwock generator with a passage of invented Elvish', href: 'https://jabberwock.invigoro.me' },
+        { image: 'jabberwock-sayit', alt: 'A Dwarvish inscription with a pronunciation respelling under every word' },
+      ],
+    },
+    links: [
+      { href: 'https://jabberwock.invigoro.me', label: 'Try it', primary: true },
+      { href: 'https://github.com/invigoro/dummy-text-generator', label: 'Source' },
+      { href: '/dm-tools.html', label: 'DM Tools shelf' },
+    ],
+  },
+  {
     id: 'racinggame',
     title: 'Kart Racing Game',
     role: 'Game designer & developer',
