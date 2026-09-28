@@ -15,11 +15,7 @@ export const site = {
   ],
 
   // Rendered as a line in the footer, above the copyright.
-  footerNote: {
-    before: 'Running a tabletop game?',
-    href: '/dm-tools.html',
-    label: 'My DM tools live here',
-  },
+  footerNote: { href: '/dm-tools.html', label: 'Tabletop DM tools' },
 
   social: [
     { label: 'GitHub', href: 'https://github.com/invigoro', handle: 'invigoro' },

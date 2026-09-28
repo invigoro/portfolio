@@ -75,7 +75,7 @@ const footer = (site) => `
       <ul class="footer__links">
 ${site.social.map((s) => `        <li><a href="${s.href}">${s.label}</a></li>`).join('\n')}
       </ul>
-      ${site.footerNote ? `<p class="footer__aside">${site.footerNote.before} <a href="${site.footerNote.href}">${site.footerNote.label}</a>.</p>` : ''}
+      ${site.footerNote ? `<p class="footer__aside"><a href="${site.footerNote.href}">${site.footerNote.label}</a></p>` : ''}
       <p class="footer__legal">
         &copy; <span data-year>${new Date().getFullYear()}</span> ${site.name} &middot;
         <a href="/terms.html">Terms of Use</a> &middot; <a href="/privacy.html">Privacy Policy</a>
