@@ -81,7 +81,7 @@ export const projects = [
     },
     links: [
       { href: 'https://jabberwock.invigoro.me', label: 'Try it', primary: true },
-      { href: 'https://github.com/invigoro/dummy-text-generator', label: 'Source' },
+      { href: 'https://github.com/invigoro/Jabberwock', label: 'Source' },
       { href: '/dm-tools.html', label: 'DM Tools shelf' },
     ],
   },
@@ -106,7 +106,7 @@ export const projects = [
     },
     links: [
       { href: 'https://sator.invigoro.me', label: 'Try it', primary: true },
-      { href: 'https://github.com/invigoro/anagram-generator', label: 'Source' },
+      { href: 'https://github.com/invigoro/Sator', label: 'Source' },
       { href: '/dm-tools.html', label: 'DM Tools shelf' },
     ],
   },
