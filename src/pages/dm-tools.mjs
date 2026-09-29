@@ -30,7 +30,7 @@ ${s.tools.map(card).join('\n')}
 export default () => ({
   title: 'DM Tools',
   description:
-    'A shelf of tools for running tabletop games: a weathered handout generator, a filler-text generator, a magic item shop, an anagram generator, a card deck for Four Horsemen, and a dice roller for New World.',
+    'A shelf of tools for running tabletop games: a weathered handout generator, a filler-text generator, a magic item shop, a puzzle and anagram maker, a card deck for Four Horsemen, and a dice roller for New World.',
   layout: 'dm-tools',
   body: `<header class="masthead">
       <div class="wrap">

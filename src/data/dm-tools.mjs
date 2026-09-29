@@ -36,6 +36,17 @@ export const shelves = [
         ],
       },
       {
+        name: 'Sator',
+        tag: 'Puzzles',
+        href: 'https://sator.invigoro.me',
+        shot: 'dm-sator',
+        alt: 'A Sator puzzle card: the answer, the clue laid out in letter tiles, and the hints beneath it',
+        body: [
+          'Named for the Roman word square whose letters rearrange into PATER NOSTER. Scrambles a password, a name, or a clue into letters the players have to work back — easy keeps the words and their first letters, hard runs everything together, moves every letter, and parts any two that used to sit side by side. It finds real-word anagrams too (DORMITORY gives DIRTY ROOM), or helps you write one by hand.',
+          'Any line becomes a puzzle card: how much the clue gives away, what else its letters spell, a riddle, hints that ladder out a letter at a time, then a player link, tiles to print and scatter, or the clue carved into granite in Stele.',
+        ],
+      },
+      {
         name: 'RPG MegaMart',
         tag: 'Magic items',
         href: 'https://www.rpgmegamart.com',
@@ -43,16 +54,6 @@ export const shelves = [
         alt: 'A shop page of magic items, each with a price and a description',
         body: [
           'A shop your players can browse. Build magic items with their own art, price, and rules text, gather them into a store, and hand the players the link instead of reading a list aloud.',
-        ],
-      },
-      {
-        name: 'Anagram Generator',
-        tag: 'Puzzles',
-        href: 'https://invigoro.github.io/anagram-generator/',
-        shot: 'dm-anagram',
-        alt: 'A numbered list of scrambled versions of a phrase',
-        body: [
-          'Type a phrase and get back pages of scrambles of it. Good for hunting a hidden name for a riddle, or for filling a cipher handout with something that rearranges into the real answer.',
         ],
       },
     ],

@@ -15,10 +15,6 @@
     "w": 1069,
     "h": 602
   },
-  "img/dm-anagram.webp": {
-    "w": 1200,
-    "h": 750
-  },
   "img/dm-fourhorsemen.webp": {
     "w": 1200,
     "h": 750
@@ -32,6 +28,10 @@
     "h": 750
   },
   "img/dm-roller.webp": {
+    "w": 1200,
+    "h": 750
+  },
+  "img/dm-sator.webp": {
     "w": 1200,
     "h": 750
   },
