@@ -86,6 +86,31 @@ export const projects = [
     ],
   },
   {
+    id: 'sator',
+    title: 'Sator',
+    role: 'Designer & developer',
+    tags: ['web'],
+    stack: ['TypeScript', 'React', 'Vite'],
+    summary:
+      'Anagrams for tabletop puzzles: scramble a password, a name, or a clue, hand the players the letters, and make them work it back.',
+    body: [
+      'Scrambles come at a difficulty. Easy keeps the words and their first letters; medium moves every letter; hard runs the words together and parts old neighbours, so no two letters that sat side by side still do. They can be reshaped into a set number of words or a pattern of lengths like 3-4-3, and made pronounceable enough to read aloud — RATIONSESTARDARDISED… rather than NKLEEOESFIITTSARHOE… When the letters cannot do what you asked, because AAB has nowhere to put its second A, it says so and shows the closest it can manage.',
+      'It will also find phrases of real words that use every letter — DORMITORY gives DIRTY ROOM — out of a word list you pick plus any names from your own game, or help you write an anagram by hand, showing the letters still unused and the words that would fit in them.',
+      'Any line then becomes a puzzle. The card measures how much the clue gives away — letters left in place, old neighbours, pieces of the answer still whole — and lists the other answers the same letters spell, so you can decide which of them you would accept. Add a riddle, decide how many hints the players may take, then show them the clue in large tiles, send a player link that checks guesses without holding the answer, print tiles to cut up and scatter, or pass it to <a href="#stele">Stele</a> to be carved in granite. The whole puzzle lives in the URL, compressed, so the page never spells the password out during a screen share and a puzzle built before the session comes back with the link.',
+    ],
+    media: {
+      images: [
+        { image: 'sator', alt: 'Sator listing scrambles of the phrase SPEAK FRIEND AND ENTER', href: 'https://sator.invigoro.me' },
+        { image: 'sator-puzzle', alt: 'A Sator puzzle card: the answer, the clue in letter tiles, a riddle, hints, and buttons to show or print it' },
+      ],
+    },
+    links: [
+      { href: 'https://sator.invigoro.me', label: 'Try it', primary: true },
+      { href: 'https://github.com/invigoro/anagram-generator', label: 'Source' },
+      { href: '/dm-tools.html', label: 'DM Tools shelf' },
+    ],
+  },
+  {
     id: 'racinggame',
     title: 'Kart Racing Game',
     role: 'Game designer & developer',

@@ -114,6 +114,8 @@ h4 { font-size: 1.05rem; }
 
 p { margin: 0 0 1.1em; }
 p:last-child { margin-bottom: 0; }
+/* Long unbroken strings — a 20-letter scramble, say — break rather than overflow. */
+p, li, td { overflow-wrap: break-word; }
 
 a {
   color: var(--accent-text);
